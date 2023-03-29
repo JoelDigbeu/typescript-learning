@@ -13,6 +13,17 @@ const baby = new Student('Baby', 1)
 const jowell = new Student('Jowell', 24)
 const lucas = new Student('Lucas', 28)
 
-console.log(baby.sayHello())
-console.log(jowell.sayHello())
-console.log(lucas.sayHello())
+// console.log(baby.sayHello())
+// console.log(jowell.sayHello())
+// console.log(lucas.sayHello())
+
+const car = {
+  name: 'Mercedes C300',
+  getName: function () {
+    setTimeout(() => {
+      console.log(this)
+    }, 100)
+  },
+}
+
+console.log(car.getName())
